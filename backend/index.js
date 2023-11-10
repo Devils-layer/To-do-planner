@@ -9,7 +9,7 @@ app.use(cors());
 
 // Connect to MongoDB
 mongoose
-  .connect('mongodb+srv://codebykt:theja123@cluster0.lvgvbjo.mongodb.net/?retryWrites=true&w=majority')
+  .connect('mongodb://127.0.0.1:27017/nm_todo')
   .then(() => console.log("Database Connected"))
   .catch((e) => console.log(e));
 // Define a task schema and model
